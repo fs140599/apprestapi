@@ -8,9 +8,9 @@ const conn =  mysql.createConnection({
     database:'Dbrestapi'
 });
 
-conn.connect((err)=>(
+conn.connect((err)=>{
     if(err) throw err;
     console.log('myql terkoneksi');
-));
+});
 module.exports = conn;
 
